@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Criar conta | Mercadão do Victor</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body class="auth-body">
+  <header class="auth-header"><a class="brand" href="index.html"><span class="brand-mark">MV</span><span>Mercadão <b>do Victor</b></span></a><a class="back-link" href="index.html">← Voltar à loja</a></header>
+  <main class="auth-layout">
+    <section class="auth-intro"><span class="eyebrow">BEM-VINDO AO MERCADÃO</span><h1>Uma compra mais simples começa aqui.</h1><p>Crie sua conta de demonstração para acessar o Mercadão do Victor.</p><div class="auth-illustration">🛒<span>🍎</span><span>🥑</span><span>🥖</span></div></section>
+    <section class="auth-card">
+      <span class="eyebrow">CADASTRO</span><h2>Crie sua conta</h2><p class="muted">Preencha os dados abaixo.</p>
+      <form id="registerForm" novalidate>
+        <label for="name">Nome completo</label><input id="name" name="name" type="text" autocomplete="name" placeholder="Seu nome" required minlength="2">
+        <label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" placeholder="voce@exemplo.com" required>
+        <label for="password">Senha</label><input id="password" name="password" type="password" autocomplete="new-password" placeholder="Mínimo de 6 caracteres" required minlength="6">
+        <label for="confirmPassword">Confirmar senha</label><input id="confirmPassword" name="confirmPassword" type="password" autocomplete="new-password" placeholder="Digite a senha novamente" required minlength="6">
+        <p class="form-error" id="registerError" role="alert"></p>
+        <button class="btn btn-primary btn-full" type="submit">Criar conta</button>
+      </form>
+      <p class="auth-switch">Já tem uma conta? <a href="login.html">Entre aqui</a></p>
+      <p class="security-note">Demonstração local: os dados ficam neste navegador, não em um servidor.</p>
+    </section>
+  </main>
+  <footer class="auth-footer">© <span id="year"></span> Mercadão do Victor</footer>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mercadão do Victor — ofertas e produtos para o seu dia a dia.">
+  <title>Mercadão do Victor | Início</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html"><span class="brand-mark">MV</span><span>Mercadão <b>do Victor</b></span></a>
+    <nav class="nav">
+      <a class="active" href="index.html">Início</a>
+      <a href="#ofertas">Ofertas</a>
+      <a href="#categorias">Categorias</a>
+    </nav>
+    <div class="header-actions" id="headerActions">
+      <a class="btn btn-outline" href="login.html">Entrar</a>
+      <a class="btn btn-primary" href="cadastro.html">Criar conta</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">FRESQUINHO, PERTO DE VOCÊ</span>
+        <h1>Seu mercado.<br><span>Suas melhores escolhas.</span></h1>
+        <p>Qualidade, praticidade e ofertas para deixar sua rotina mais fácil. Bem-vindo ao Mercadão do Victor!</p>
+        <a class="btn btn-primary btn-large" href="#ofertas">Ver ofertas <span aria-hidden="true">→</span></a>
+        <div class="hero-points"><span>✓ Produtos selecionados</span><span>✓ Preços especiais</span></div>
+      </div>
+      <div class="hero-art" aria-label="Ilustração de sacola de compras com frutas e vegetais">
+        <div class="sun"></div><div class="produce produce-one">🍊</div><div class="produce produce-two">🥦</div>
+        <div class="produce produce-three">🍎</div><div class="produce produce-four">🥕</div>
+        <div class="shopping-bag"><div class="bag-handle"></div><span>MV</span><small>mercado do victor</small></div>
+        <div class="floating-note">🥬 Fresquinho todo dia</div>
+      </div>
+    </section>
+
+    <section class="section" id="categorias">
+      <div class="section-heading"><div><span class="eyebrow">EXPLORE A LOJA</span><h2>O que você procura?</h2></div><p>Encontre seus favoritos em poucos cliques.</p></div>
+      <div class="category-grid">
+        <a class="category-card" href="#ofertas"><span class="category-icon">🥦</span><strong>Hortifruti</strong><small>Frutas e verduras</small></a>
+        <a class="category-card" href="#ofertas"><span class="category-icon">🥛</span><strong>Laticínios</strong><small>Leite, queijo e mais</small></a>
+        <a class="category-card" href="#ofertas"><span class="category-icon">🍞</span><strong>Padaria</strong><small>Para começar bem o dia</small></a>
+        <a class="category-card" href="#ofertas"><span class="category-icon">🥫</span><strong>Mercearia</strong><small>Itens essenciais</small></a>
+      </div>
+    </section>
+
+    <section class="section offers-section" id="ofertas">
+      <div class="section-heading"><div><span class="eyebrow">SELEÇÃO DA SEMANA</span><h2>Ofertas em destaque</h2></div><span class="offer-tag">PREÇOS DE EXEMPLO</span></div>
+      <div class="product-grid">
+        <article class="product-card"><div class="product-visual visual-green">🍌</div><div class="product-info"><span class="product-category">HORTIFRUTI</span><h3>Banana-prata</h3><p>Preço por kg</p><div class="product-bottom"><strong>R$ 5,49</strong><button class="add-btn" data-product="Banana-prata" aria-label="Adicionar Banana-prata">+</button></div></div></article>
+        <article class="product-card"><div class="product-visual visual-yellow">🥛</div><div class="product-info"><span class="product-category">LATICÍNIOS</span><h3>Leite integral</h3><p>Embalagem 1 litro</p><div class="product-bottom"><strong>R$ 4,79</strong><button class="add-btn" data-product="Leite integral" aria-label="Adicionar Leite integral">+</button></div></div></article>
+        <article class="product-card"><div class="product-visual visual-orange">🍞</div><div class="product-info"><span class="product-category">PADARIA</span><h3>Pão de forma</h3><p>Pacote  líder 450 g</p><div class="product-bottom"><strong>R$ 7,99</strong><button class="add-btn" data-product="Pão de forma" aria-label="Adicionar Pão de forma">+</button></div></div></article>
+        <article class="product-card"><div class="product-visual visual-red">🍎</div><div class="product-info"><span class="product-category">HORTIFRUTI</span><h3>Maçã nacional</h3><p>Preço por kg</p><div class="product-bottom"><strong>R$ 8,90</strong><button class="add-btn" data-product="Maçã nacional" aria-label="Adicionar Maçã nacional">+</button></div></div></article>
+      </div>
+      <p class="demo-note">Valores ilustrativos para demonstração do projeto. Os botões simulam uma lista de compras no navegador.</p>
+    </section>
+    <section class="signup-banner"><div><span class="eyebrow">FAÇA PARTE</span><h2>Ofertas boas começam com uma conta.</h2><p>Cadastre-se para ter sua conta salva neste navegador.</p></div><a class="btn btn-light" href="cadastro.html">Criar minha conta →</a></section>
+  </main>
+  <footer class="footer"><a class="brand" href="index.html"><span class="brand-mark">MV</span><span>Mercadão <b>do Victor</b></span></a><p>© <span id="year"></span> Mercadão do Victor. Projeto demonstrativo.</p></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
